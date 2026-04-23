@@ -14,6 +14,7 @@ const CHAT_ID =
 const BASE_BET = Number(process.env.BASE_BET_TAIXIU || process.env.BASE_BET_TX || process.env.BASE_BET || 10000);
 const DISABLE_TELEGRAM = process.env.DISABLE_TELEGRAM === "1";
 const TELEGRAM_ENABLED = !DISABLE_TELEGRAM && Boolean(TOKEN && CHAT_ID);
+const BOT_ROLE = process.env.BOT_ROLE || "both";
 
 if (!TELEGRAM_ENABLED) {
   console.warn("Telegram disabled for TAIXIU (missing token/chat or DISABLE_TELEGRAM=1)");
@@ -72,6 +73,8 @@ function loadStateFromFile() {
 }
 
 function writeStatsFile(entry) {
+  if (BOT_ROLE === "telegram") return;
+
   const sessionKey = String(entry?.session ?? "");
   if (sessionKey && seenSessions.has(sessionKey)) {
     return;
@@ -218,6 +221,7 @@ function getSlogan() {
 
 // ===== BOT =====
 async function send(msg) {
+  if (BOT_ROLE === "stats") return;
   if (!TELEGRAM_ENABLED) return;
   try {
     await axios.post(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {

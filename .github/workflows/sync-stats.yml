@@ -30,23 +30,20 @@ jobs:
         run: npm ci
 
       - name: Run TX2 bot for a bounded window
-        run: timeout 6m node bot-telegram.cjs || true
+        run: timeout 6m node bot-telegram.stats.cjs || true
         env:
-          DISABLE_TELEGRAM: "1"
           BASE_BET: ${{ secrets.BASE_BET }}
 
       - name: Run TAI XIU bot for a bounded window
-        run: timeout 6m node bot-taixiu.cjs || true
+        run: timeout 6m node bot-taixiu.stats.cjs || true
         env:
-          DISABLE_TELEGRAM: "1"
           BASE_BET_TAIXIU: ${{ secrets.BASE_BET_TAIXIU }}
           BASE_BET_TX: ${{ secrets.BASE_BET_TX }}
           BASE_BET: ${{ secrets.BASE_BET }}
 
       - name: Run XOC DIA bot for a bounded window
-        run: timeout 6m node bot-xocdia.cjs || true
+        run: timeout 6m node bot-xocdia.stats.cjs || true
         env:
-          DISABLE_TELEGRAM: "1"
           BASE_BET_XOCDIA: ${{ secrets.BASE_BET_XOCDIA }}
           BASE_BET: ${{ secrets.BASE_BET }}
 

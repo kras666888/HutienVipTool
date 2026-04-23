@@ -8,8 +8,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "bot": "node bot-telegram.cjs",
+    "bot:telegram": "node bot-telegram.cjs",
+    "bot:telegram:stats": "node bot-telegram.stats.cjs",
     "bot:xocdia": "node bot-xocdia.cjs",
-    "bot:taixiu": "node bot-taixiu.cjs"
+    "bot:xocdia:stats": "node bot-xocdia.stats.cjs",
+    "bot:taixiu": "node bot-taixiu.cjs",
+    "bot:taixiu:stats": "node bot-taixiu.stats.cjs"
   },
   "dependencies": {
     "axios": "^1.13.1",
