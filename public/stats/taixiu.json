@@ -1,23 +1,23 @@
 {
   "game": "taixiu",
-  "updatedAt": "2026-04-23T16:20:13.029Z",
+  "updatedAt": "2026-04-23T17:57:35.449Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 151,
-    "win": 80,
-    "lose": 71,
+    "rounds": 156,
+    "win": 83,
+    "lose": 73,
     "winRate": 53,
-    "profit": 790000,
-    "currentStreak": -1,
-    "nextBet": 40000,
-    "lastSession": 10991237
+    "profit": 830000,
+    "currentStreak": 3,
+    "nextBet": 20000,
+    "lastSession": 10991322
   },
   "state": {
-    "loseStreak": 1,
+    "loseStreak": 0,
     "predictSide": "TÀI",
-    "streak": -1,
-    "lastSession": 10991237,
-    "lastResultSession": 10991237
+    "streak": 3,
+    "lastSession": 10991322,
+    "lastResultSession": 10991322
   },
   "history": [
     {
@@ -1410,6 +1410,61 @@
       "bet": 10000,
       "change": -10000,
       "timestamp": 1776961213029
+    },
+    {
+      "session": 10991318,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 8,
+      "display": "3️⃣1️⃣4️⃣",
+      "status": "LOSE",
+      "bet": 20000,
+      "change": -20000,
+      "timestamp": 1776966778818
+    },
+    {
+      "session": 10991319,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 14,
+      "display": "5️⃣4️⃣5️⃣",
+      "status": "LOSE",
+      "bet": 40000,
+      "change": -40000,
+      "timestamp": 1776966858561
+    },
+    {
+      "session": 10991320,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 13,
+      "display": "4️⃣3️⃣6️⃣",
+      "status": "WIN",
+      "bet": 80000,
+      "change": 80000,
+      "timestamp": 1776966924181
+    },
+    {
+      "session": 10991321,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 12,
+      "display": "5️⃣2️⃣5️⃣",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1776966989852
+    },
+    {
+      "session": 10991322,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 13,
+      "display": "2️⃣6️⃣5️⃣",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1776967055449
     }
   ]
 }
