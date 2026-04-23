@@ -12,10 +12,11 @@ const CHAT_ID =
   process.env.TELEGRAM_CHAT_ID ||
   "";
 const BASE_BET = Number(process.env.BASE_BET_TAIXIU || process.env.BASE_BET_TX || process.env.BASE_BET || 10000);
+const DISABLE_TELEGRAM = process.env.DISABLE_TELEGRAM === "1";
+const TELEGRAM_ENABLED = !DISABLE_TELEGRAM && Boolean(TOKEN && CHAT_ID);
 
-if (!TOKEN || !CHAT_ID) {
-  console.error("Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID_TAIXIU");
-  process.exit(1);
+if (!TELEGRAM_ENABLED) {
+  console.warn("Telegram disabled for TAIXIU (missing token/chat or DISABLE_TELEGRAM=1)");
 }
 
 // ===== STATE =====
@@ -33,11 +34,50 @@ const STATS_DIR = path.join(__dirname, "public", "stats");
 const STATS_FILE = path.join(STATS_DIR, "taixiu.json");
 const MAX_HISTORY = 180;
 const history = [];
+const seenSessions = new Set();
+
+function loadStateFromFile() {
+  try {
+    if (!fs.existsSync(STATS_FILE)) return;
+    const raw = fs.readFileSync(STATS_FILE, "utf8");
+    const parsed = JSON.parse(raw);
+
+    const totals = parsed?.totals || {};
+    win = Number(totals.win || 0);
+    lose = Number(totals.lose || 0);
+    profit = Number(totals.profit || 0);
+    streak = Number(totals.currentStreak || 0);
+
+    const existingHistory = Array.isArray(parsed?.history) ? parsed.history : [];
+    existingHistory.slice(-MAX_HISTORY).forEach((entry) => {
+      if (!entry || entry.session === undefined || entry.session === null) return;
+      history.push(entry);
+      seenSessions.add(String(entry.session));
+    });
+
+    const state = parsed?.state || {};
+    loseStreak = Number.isFinite(Number(state.loseStreak)) ? Number(state.loseStreak) : 0;
+    predictSide = typeof state.predictSide === "string" ? state.predictSide : predictSide;
+    lastSession = state.lastSession ?? lastSession;
+    lastResultSession = state.lastResultSession ?? lastResultSession;
+  } catch (err) {
+    console.error("Load taixiu stats failed:", err?.message || err);
+  }
+}
 
 function writeStatsFile(entry) {
+  const sessionKey = String(entry?.session ?? "");
+  if (sessionKey && seenSessions.has(sessionKey)) {
+    return;
+  }
+
   history.push(entry);
+  if (sessionKey) seenSessions.add(sessionKey);
   if (history.length > MAX_HISTORY) {
-    history.shift();
+    const dropped = history.shift();
+    if (dropped?.session !== undefined && dropped?.session !== null) {
+      seenSessions.delete(String(dropped.session));
+    }
   }
 
   const totalRounds = win + lose;
@@ -54,6 +94,13 @@ function writeStatsFile(entry) {
       currentStreak: streak,
       nextBet: nextMoney(),
       lastSession: entry.session,
+    },
+    state: {
+      loseStreak,
+      predictSide,
+      streak,
+      lastSession,
+      lastResultSession,
     },
     history,
   };
@@ -158,6 +205,7 @@ function getSlogan() {
 
 // ===== BOT =====
 async function send(msg) {
+  if (!TELEGRAM_ENABLED) return;
   try {
     await axios.post(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
       chat_id: CHAT_ID,
@@ -175,6 +223,8 @@ function predict() {
 
 // ===== MAIN =====
 async function run() {
+  loadStateFromFile();
+
   const base = "https://taixiu.apiquadautayshelby.vip/signalr";
   const hub = "luckydiceHub";
 
