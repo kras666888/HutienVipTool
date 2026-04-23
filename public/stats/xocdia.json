@@ -1,98 +1,1637 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-04-23T05:15:48.555Z",
+  "updatedAt": "2026-04-23T07:34:00.389Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 8,
-    "win": 3,
-    "lose": 5,
-    "winRate": 38,
-    "profit": 20000,
-    "currentStreak": -1,
-    "nextBet": 40000,
-    "lastSession": "1515554"
+    "rounds": 233,
+    "win": 120,
+    "lose": 113,
+    "winRate": 52,
+    "profit": 1200000,
+    "currentStreak": 4,
+    "nextBet": 20000,
+    "lastSession": "1515779"
   },
   "history": [
     {
-      "session": "1515546",
+      "session": "1515600",
       "side": "LE",
       "label": "LẺ",
       "value": 1,
       "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "PENDING",
-      "timestamp": 1776921019261
+      "status": "WIN",
+      "timestamp": 1776923115012
     },
     {
-      "session": "1515547",
+      "session": "1515601",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776923150627
+    },
+    {
+      "session": "1515602",
       "side": "CHAN",
       "label": "CHẴN",
       "value": 2,
       "display": "2-2 ⚪⚪🔴🔴",
-      "status": "WIN",
-      "timestamp": 1776921054206
+      "status": "LOSE",
+      "timestamp": 1776923184897
     },
     {
-      "session": "1515548",
+      "session": "1515603",
       "side": "LE",
       "label": "LẺ",
       "value": 3,
       "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
-      "status": "LOSE",
-      "timestamp": 1776921088303
+      "status": "WIN",
+      "timestamp": 1776923221396
     },
     {
-      "session": "1515549",
+      "session": "1515604",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776923255432
+    },
+    {
+      "session": "1515605",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776923310038
+    },
+    {
+      "session": "1515606",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776923351359
+    },
+    {
+      "session": "1515607",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776923387472
+    },
+    {
+      "session": "1515608",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776923421616
+    },
+    {
+      "session": "1515609",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776923469890
+    },
+    {
+      "session": "1515610",
       "side": "CHAN",
       "label": "CHẴN",
       "value": 2,
       "display": "2-2 ⚪⚪🔴🔴",
       "status": "WIN",
-      "timestamp": 1776921122430
+      "timestamp": 1776923503971
     },
     {
-      "session": "1515550",
+      "session": "1515611",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776923540440
+    },
+    {
+      "session": "1515612",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776923575016
+    },
+    {
+      "session": "1515613",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776923609200
+    },
+    {
+      "session": "1515614",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776923643384
+    },
+    {
+      "session": "1515615",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776923677512
+    },
+    {
+      "session": "1515616",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776923711550
+    },
+    {
+      "session": "1515617",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776923745589
+    },
+    {
+      "session": "1515618",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776923779696
+    },
+    {
+      "session": "1515619",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776923814347
+    },
+    {
+      "session": "1515620",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776923849115
+    },
+    {
+      "session": "1515621",
       "side": "CHAN",
       "label": "CHẴN",
       "value": 0,
       "display": "4 trắng ⚪⚪⚪⚪",
       "status": "LOSE",
-      "timestamp": 1776921158700
+      "timestamp": 1776923884073
     },
     {
-      "session": "1515551",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 3,
-      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
-      "status": "LOSE",
-      "timestamp": 1776921220905
-    },
-    {
-      "session": "1515552",
+      "session": "1515622",
       "side": "LE",
       "label": "LẺ",
       "value": 1,
       "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "LOSE",
-      "timestamp": 1776921278592
+      "status": "WIN",
+      "timestamp": 1776923946383
     },
     {
-      "session": "1515553",
+      "session": "1515623",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776924001420
+    },
+    {
+      "session": "1515624",
       "side": "CHAN",
       "label": "CHẴN",
       "value": 2,
       "display": "2-2 ⚪⚪🔴🔴",
       "status": "WIN",
-      "timestamp": 1776921314437
+      "timestamp": 1776924034729
     },
     {
-      "session": "1515554",
+      "session": "1515625",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776924068939
+    },
+    {
+      "session": "1515626",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776924110177
+    },
+    {
+      "session": "1515627",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776924143731
+    },
+    {
+      "session": "1515628",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776924177873
+    },
+    {
+      "session": "1515629",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776924211615
+    },
+    {
+      "session": "1515630",
       "side": "LE",
       "label": "LẺ",
       "value": 1,
       "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
       "status": "LOSE",
-      "timestamp": 1776921348555
+      "timestamp": 1776924245517
+    },
+    {
+      "session": "1515631",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776924279350
+    },
+    {
+      "session": "1515632",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776924313509
+    },
+    {
+      "session": "1515633",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776924347599
+    },
+    {
+      "session": "1515634",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776924383444
+    },
+    {
+      "session": "1515635",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776924417419
+    },
+    {
+      "session": "1515636",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776924452205
+    },
+    {
+      "session": "1515637",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776924506771
+    },
+    {
+      "session": "1515638",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776924569030
+    },
+    {
+      "session": "1515639",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776924604282
+    },
+    {
+      "session": "1515640",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776924639717
+    },
+    {
+      "session": "1515641",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776924673911
+    },
+    {
+      "session": "1515642",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776924710212
+    },
+    {
+      "session": "1515643",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776924745889
+    },
+    {
+      "session": "1515644",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776924780356
+    },
+    {
+      "session": "1515645",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776924814603
+    },
+    {
+      "session": "1515646",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776924848731
+    },
+    {
+      "session": "1515647",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776924882956
+    },
+    {
+      "session": "1515648",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776924918297
+    },
+    {
+      "session": "1515649",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776924954450
+    },
+    {
+      "session": "1515650",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776924988813
+    },
+    {
+      "session": "1515651",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776925026463
+    },
+    {
+      "session": "1515652",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776925061490
+    },
+    {
+      "session": "1515653",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776925095906
+    },
+    {
+      "session": "1515654",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776925135384
+    },
+    {
+      "session": "1515655",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776925180866
+    },
+    {
+      "session": "1515656",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776925215425
+    },
+    {
+      "session": "1515657",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776925252061
+    },
+    {
+      "session": "1515658",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776925286447
+    },
+    {
+      "session": "1515659",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776925320846
+    },
+    {
+      "session": "1515660",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776925355418
+    },
+    {
+      "session": "1515661",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776925390353
+    },
+    {
+      "session": "1515662",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776925424751
+    },
+    {
+      "session": "1515663",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776925459118
+    },
+    {
+      "session": "1515664",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776925493238
+    },
+    {
+      "session": "1515665",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776925527316
+    },
+    {
+      "session": "1515666",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776925561430
+    },
+    {
+      "session": "1515667",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776925595496
+    },
+    {
+      "session": "1515668",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776925629675
+    },
+    {
+      "session": "1515669",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776925663782
+    },
+    {
+      "session": "1515670",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776925698817
+    },
+    {
+      "session": "1515671",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776925733761
+    },
+    {
+      "session": "1515672",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776925767784
+    },
+    {
+      "session": "1515673",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776925802102
+    },
+    {
+      "session": "1515674",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776925836286
+    },
+    {
+      "session": "1515675",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776925870314
+    },
+    {
+      "session": "1515676",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776925904425
+    },
+    {
+      "session": "1515677",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776925938469
+    },
+    {
+      "session": "1515678",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776925973008
+    },
+    {
+      "session": "1515679",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776926007102
+    },
+    {
+      "session": "1515680",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776926043490
+    },
+    {
+      "session": "1515681",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776926081739
+    },
+    {
+      "session": "1515682",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776926115861
+    },
+    {
+      "session": "1515683",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776926151011
+    },
+    {
+      "session": "1515684",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776926186713
+    },
+    {
+      "session": "1515685",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776926221375
+    },
+    {
+      "session": "1515686",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776926255608
+    },
+    {
+      "session": "1515687",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776926289714
+    },
+    {
+      "session": "1515688",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776926323793
+    },
+    {
+      "session": "1515689",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776926358019
+    },
+    {
+      "session": "1515690",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776926392290
+    },
+    {
+      "session": "1515691",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776926427512
+    },
+    {
+      "session": "1515692",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776926464942
+    },
+    {
+      "session": "1515693",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776926502754
+    },
+    {
+      "session": "1515694",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776926537422
+    },
+    {
+      "session": "1515695",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776926572344
+    },
+    {
+      "session": "1515696",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776926606635
+    },
+    {
+      "session": "1515697",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776926640750
+    },
+    {
+      "session": "1515698",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776926676992
+    },
+    {
+      "session": "1515699",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776926711065
+    },
+    {
+      "session": "1515700",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776926745217
+    },
+    {
+      "session": "1515701",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776926780713
+    },
+    {
+      "session": "1515702",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776926814806
+    },
+    {
+      "session": "1515703",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776926849230
+    },
+    {
+      "session": "1515704",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776926883430
+    },
+    {
+      "session": "1515705",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776926918428
+    },
+    {
+      "session": "1515706",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776926953752
+    },
+    {
+      "session": "1515707",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776926987820
+    },
+    {
+      "session": "1515708",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776927022100
+    },
+    {
+      "session": "1515709",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776927056222
+    },
+    {
+      "session": "1515710",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776927091058
+    },
+    {
+      "session": "1515711",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776927125637
+    },
+    {
+      "session": "1515712",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776927159783
+    },
+    {
+      "session": "1515713",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776927193950
+    },
+    {
+      "session": "1515714",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776927229188
+    },
+    {
+      "session": "1515715",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776927263230
+    },
+    {
+      "session": "1515716",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776927298112
+    },
+    {
+      "session": "1515717",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776927333080
+    },
+    {
+      "session": "1515718",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776927367104
+    },
+    {
+      "session": "1515719",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776927402480
+    },
+    {
+      "session": "1515720",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776927438380
+    },
+    {
+      "session": "1515721",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776927472463
+    },
+    {
+      "session": "1515722",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776927506643
+    },
+    {
+      "session": "1515723",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776927540817
+    },
+    {
+      "session": "1515724",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776927575606
+    },
+    {
+      "session": "1515725",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776927609831
+    },
+    {
+      "session": "1515726",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776927651767
+    },
+    {
+      "session": "1515727",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776927685040
+    },
+    {
+      "session": "1515728",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776927719274
+    },
+    {
+      "session": "1515729",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776927754287
+    },
+    {
+      "session": "1515730",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776927788854
+    },
+    {
+      "session": "1515731",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776927822987
+    },
+    {
+      "session": "1515732",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776927866184
+    },
+    {
+      "session": "1515733",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776927908139
+    },
+    {
+      "session": "1515734",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776927942282
+    },
+    {
+      "session": "1515735",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776927976364
+    },
+    {
+      "session": "1515736",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776928010473
+    },
+    {
+      "session": "1515737",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776928062530
+    },
+    {
+      "session": "1515738",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776928110348
+    },
+    {
+      "session": "1515739",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776928144451
+    },
+    {
+      "session": "1515740",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776928189977
+    },
+    {
+      "session": "1515741",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776928238750
+    },
+    {
+      "session": "1515742",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776928273619
+    },
+    {
+      "session": "1515743",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776928307811
+    },
+    {
+      "session": "1515744",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776928342046
+    },
+    {
+      "session": "1515745",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776928378181
+    },
+    {
+      "session": "1515746",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776928429435
+    },
+    {
+      "session": "1515747",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776928464443
+    },
+    {
+      "session": "1515748",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776928499785
+    },
+    {
+      "session": "1515749",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776928533919
+    },
+    {
+      "session": "1515750",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776928582510
+    },
+    {
+      "session": "1515751",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776928637989
+    },
+    {
+      "session": "1515752",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776928672272
+    },
+    {
+      "session": "1515753",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776928706043
+    },
+    {
+      "session": "1515754",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776928740441
+    },
+    {
+      "session": "1515755",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776928776181
+    },
+    {
+      "session": "1515756",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776928810453
+    },
+    {
+      "session": "1515757",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776928844582
+    },
+    {
+      "session": "1515758",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776928878813
+    },
+    {
+      "session": "1515759",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776928913066
+    },
+    {
+      "session": "1515760",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776928954448
+    },
+    {
+      "session": "1515761",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776928988668
+    },
+    {
+      "session": "1515762",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776929022963
+    },
+    {
+      "session": "1515763",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776929057357
+    },
+    {
+      "session": "1515764",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776929102557
+    },
+    {
+      "session": "1515765",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776929141702
+    },
+    {
+      "session": "1515766",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776929176743
+    },
+    {
+      "session": "1515767",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776929211222
+    },
+    {
+      "session": "1515768",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776929245806
+    },
+    {
+      "session": "1515769",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776929280837
+    },
+    {
+      "session": "1515770",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776929319904
+    },
+    {
+      "session": "1515771",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776929354172
+    },
+    {
+      "session": "1515772",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "timestamp": 1776929388413
+    },
+    {
+      "session": "1515773",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "timestamp": 1776929424220
+    },
+    {
+      "session": "1515774",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "timestamp": 1776929458431
+    },
+    {
+      "session": "1515775",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "timestamp": 1776929497941
+    },
+    {
+      "session": "1515776",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776929536379
+    },
+    {
+      "session": "1515777",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "timestamp": 1776929571089
+    },
+    {
+      "session": "1515778",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776929606160
+    },
+    {
+      "session": "1515779",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "timestamp": 1776929640389
     }
   ]
 }

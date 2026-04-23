@@ -1,13 +1,19 @@
 import "./style.css";
 
 const games = [
-  { key: "xocdia", title: "Xóc Đĩa", source: "/stats/xocdia.json", leftLabel: "CHẴN", rightLabel: "LẺ" },
-  { key: "taixiu", title: "Tài Xỉu", source: "/stats/taixiu.json", leftLabel: "XỈU", rightLabel: "TÀI" },
-  { key: "tx2", title: "Tài Xỉu 2", source: "/stats/tx2.json", leftLabel: "XỈU", rightLabel: "TÀI" },
+  { key: "xocdia", title: "Xóc Đĩa", source: "stats/xocdia.json", leftLabel: "CHẴN", rightLabel: "LẺ" },
+  { key: "taixiu", title: "Tài Xỉu", source: "stats/taixiu.json", leftLabel: "XỈU", rightLabel: "TÀI" },
+  { key: "tx2", title: "Tài Xỉu 2", source: "stats/tx2.json", leftLabel: "XỈU", rightLabel: "TÀI" },
 ];
 
 const ROWS = 6;
 const COLS = 20;
+const STALE_MINUTES = 30;
+const POLL_INTERVAL_MS = 5000;
+const FETCH_TIMEOUT_MS = 4500;
+const DEFAULT_STATS_BASE_URL = import.meta.env.VITE_STATS_BASE_URL || "https://raw.githubusercontent.com/kras666888/HutienVipTool/main/public/";
+const lastGoodStats = new Map();
+let isRefreshing = false;
 
 document.querySelector("#app").innerHTML = `
   <main class="dashboard">
@@ -21,6 +27,29 @@ document.querySelector("#app").innerHTML = `
 
 function currency(v) {
   return Number(v || 0).toLocaleString("vi-VN");
+}
+
+function formatUpdatedAt(value) {
+  if (!value) return "Chưa có dữ liệu";
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) return String(value);
+  return parsed.toLocaleString("vi-VN");
+}
+
+function isStale(updatedAt) {
+  const parsed = new Date(updatedAt);
+  if (Number.isNaN(parsed.getTime())) return false;
+  return Date.now() - parsed.getTime() > STALE_MINUTES * 60 * 1000;
+}
+
+function joinUrl(baseUrl, path) {
+  try {
+    return new URL(path, baseUrl).href;
+  } catch {
+    const normalizedBase = String(baseUrl || "").replace(/\/?$/, "/");
+    const normalizedPath = String(path || "").replace(/^\//, "");
+    return `${normalizedBase}${normalizedPath}`;
+  }
 }
 
 function sideClass(side) {
@@ -100,16 +129,22 @@ function renderGrid(entries) {
 function renderBoard(container, game, stats) {
   const totals = stats?.totals || {};
   const history = Array.isArray(stats?.history) ? stats.history : [];
+  const updatedAt = stats?.updatedAt || null;
+  const stale = isStale(updatedAt);
 
   const card = document.createElement("article");
-  card.className = "board";
+  card.className = `board${stale ? " board-stale" : ""}`;
   card.innerHTML = `
     <header class="board-head">
       <div>
         <h2>${game.title}</h2>
         <p>${game.leftLabel} / ${game.rightLabel}</p>
       </div>
-      <span class="badge">${history.length} phiên gần nhất</span>
+      <div class="board-meta">
+        <span class="badge">${history.length} phiên gần nhất</span>
+        <span class="badge badge-soft">${updatedAt ? `Cập nhật ${formatUpdatedAt(updatedAt)}` : "Chưa có mốc cập nhật"}</span>
+        ${stale ? `<span class="badge badge-warn">Dữ liệu cũ</span>` : ""}
+      </div>
     </header>
     ${renderGrid(history)}
     <div class="stats-grid">
@@ -125,30 +160,69 @@ function renderBoard(container, game, stats) {
 }
 
 async function readStats(url) {
-  try {
-    const response = await fetch(`${url}?t=${Date.now()}`);
-    if (!response.ok) return null;
-    return await response.json();
-  } catch {
-    return null;
+  const candidates = [joinUrl(DEFAULT_STATS_BASE_URL, url), `/${url}`];
+
+  for (const candidate of candidates) {
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+      const response = await fetch(`${candidate}?t=${Date.now()}`, {
+        cache: "no-store",
+        signal: controller.signal,
+      });
+      clearTimeout(timeoutId);
+
+      if (!response.ok) continue;
+      const data = await response.json();
+      if (data && typeof data === "object") return data;
+    } catch {
+      // Try the next source.
+    }
   }
+
+  return null;
 }
 
 async function renderDashboard() {
   const boards = document.querySelector("#boards");
   if (!boards) return;
-  boards.innerHTML = "";
 
   const allStats = await Promise.all(games.map((g) => readStats(g.source)));
-  games.forEach((game, idx) => {
-    renderBoard(boards, game, allStats[idx]);
+  const hadFetchFailure = allStats.some((item) => item === null);
+  const resolvedStats = games.map((game, idx) => {
+    const current = allStats[idx];
+    if (current) {
+      lastGoodStats.set(game.key, current);
+      return current;
+    }
+    return lastGoodStats.get(game.key) || null;
   });
+
+  boards.innerHTML = "";
+  const fragment = document.createDocumentFragment();
+  games.forEach((game, idx) => {
+    renderBoard(fragment, game, resolvedStats[idx]);
+  });
+  boards.appendChild(fragment);
 
   const stamp = document.querySelector("#last-refresh");
   if (stamp) {
-    stamp.textContent = `Cập nhật lúc ${new Date().toLocaleTimeString("vi-VN")}`;
+    const timeText = new Date().toLocaleTimeString("vi-VN");
+    stamp.textContent = hadFetchFailure
+      ? `Cập nhật lúc ${timeText} (một phần dữ liệu đang dùng bản gần nhất)`
+      : `Cập nhật lúc ${timeText}`;
   }
 }
 
-renderDashboard();
-setInterval(renderDashboard, 5000);
+async function refreshSafely() {
+  if (isRefreshing) return;
+  isRefreshing = true;
+  try {
+    await renderDashboard();
+  } finally {
+    isRefreshing = false;
+  }
+}
+
+refreshSafely();
+setInterval(refreshSafely, POLL_INTERVAL_MS);

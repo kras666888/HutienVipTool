@@ -1,0 +1,66 @@
+name: Sync Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run TX2 bot for a bounded window
+        run: timeout 10m node bot-telegram.cjs || true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BASE_BET: ${{ secrets.BASE_BET }}
+
+      - name: Run TAI XIU bot for a bounded window
+        run: timeout 10m node bot-taixiu.cjs || true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID_TAIXIU: ${{ secrets.TELEGRAM_CHAT_ID_TAIXIU }}
+          TELEGRAM_CHAT_ID_TX: ${{ secrets.TELEGRAM_CHAT_ID_TX }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BASE_BET_TAIXIU: ${{ secrets.BASE_BET_TAIXIU }}
+          BASE_BET_TX: ${{ secrets.BASE_BET_TX }}
+          BASE_BET: ${{ secrets.BASE_BET }}
+
+      - name: Run XOC DIA bot for a bounded window
+        run: timeout 10m node bot-xocdia.cjs || true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID_XOCDIA: ${{ secrets.TELEGRAM_CHAT_ID_XOCDIA }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BASE_BET_XOCDIA: ${{ secrets.BASE_BET_XOCDIA }}
+          BASE_BET: ${{ secrets.BASE_BET }}
+
+      - name: Commit stats if changed
+        run: |
+          if git diff --quiet -- public/stats; then
+            echo "No stats changes"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/stats
+          git commit -m "chore: sync stats [skip ci]"
+          git push
