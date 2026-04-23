@@ -1,16 +1,13 @@
 # Yennhi Dashboard + Telegram Bots
 
-Project gom 2 phần:
+Project được tách thành 2 luồng độc lập:
 
-1. Dashboard Vite hiển thị roadmap và thống kê từ JSON trong public/stats.
-2. Bot Telegram ghi dữ liệu cho 3 game:
-- TX2
-- Tài Xỉu
-- Xóc Đĩa
+1. Web dashboard chỉ đọc dữ liệu từ `public/stats/` và từ nguồn live trên GitHub raw khi có sẵn.
+2. Telegram chỉ gửi tin nhắn và không còn là nguồn dữ liệu chung với web.
 
-Dashboard hiện ưu tiên đọc stats từ GitHub raw để dữ liệu lên site mà không cần redeploy Netlify; nếu nguồn live không sẵn sàng thì sẽ fallback về JSON tĩnh.
+Stats của dashboard đang hiển thị theo cửa sổ 24 giờ gần nhất. Roadmap trên web có thể kéo ngang để xem toàn bộ lịch sử còn trong cửa sổ đó.
 
-Để tránh giữ token cá nhân trên máy, repo có workflow `.github/workflows/sync-stats.yml` chạy bot trong GitHub Actions rồi commit lại `public/stats/` lên `main`. Đây là cách khuyến nghị.
+Để tránh giữ token cá nhân trên máy, repo có workflow `.github/workflows/sync-stats.yml` chạy các bản stats-only trong GitHub Actions rồi commit lại `public/stats/` lên `main`. Đây là cách khuyến nghị để cập nhật web.
 
 ## Yêu cầu
 
@@ -81,23 +78,29 @@ BASE_BET_XOCDIA=10000
 
 ## Chạy bot
 
-- TX2:
+- Telegram-only TX2:
 
 ```bash
 npm run bot
 ```
 
-- Tài Xỉu:
+- Telegram-only Tài Xỉu:
 
 ```bash
 npm run bot:taixiu
 ```
 
-- Xóc Đĩa:
+- Telegram-only Xóc Đĩa:
 
 ```bash
 npm run bot:xocdia
 ```
+
+Nếu chỉ muốn tạo stats cho web mà không gửi Telegram, dùng các entrypoint stats-only:
+
+- TX2: `npm run bot:telegram:stats`
+- Tài Xỉu: `npm run bot:taixiu:stats`
+- Xóc Đĩa: `npm run bot:xocdia:stats`
 
 Khi bot chạy, dữ liệu được cập nhật vào:
 
@@ -105,13 +108,13 @@ Khi bot chạy, dữ liệu được cập nhật vào:
 - public/stats/taixiu.json
 - public/stats/xocdia.json
 
-Dashboard sẽ tự refresh dữ liệu định kỳ để hiển thị mới nhất.
+Dashboard sẽ tự refresh dữ liệu định kỳ để hiển thị mới nhất và chỉ đọc stats, không phụ thuộc luồng Telegram.
 
 ## GitHub Actions sync
 
 Workflow `.github/workflows/sync-stats.yml` có thể chạy theo lịch hoặc bấm tay để:
 
-1. Chạy các bot trong GitHub Actions.
+1. Chạy các bản stats-only trong GitHub Actions.
 2. Commit lại thay đổi trong `public/stats/` bằng `GITHUB_TOKEN` mặc định của Actions.
 3. Kích hoạt deploy Netlify từ workflow hiện có.
 
