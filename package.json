@@ -1,0 +1,22 @@
+{
+  "name": "yennhi",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "bot": "node bot-telegram.cjs",
+    "bot:xocdia": "node bot-xocdia.cjs",
+    "bot:taixiu": "node bot-taixiu.cjs"
+  },
+  "dependencies": {
+    "axios": "^1.13.1",
+    "dotenv": "^17.2.3",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "vite": "^8.0.4"
+  }
+}
