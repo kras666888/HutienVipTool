@@ -28,9 +28,15 @@ let streak = 0;
 
 const STATS_DIR = path.join(__dirname, "public", "stats");
 const STATS_FILE = path.join(STATS_DIR, "tx2.json");
+const HISTORY_WINDOW_MS = 24 * 60 * 60 * 1000;
 const MAX_HISTORY = 180;
 const history = [];
 const seenSessions = new Set();
+
+function pruneHistory(entries) {
+  const cutoff = Date.now() - HISTORY_WINDOW_MS;
+  return entries.filter((entry) => Number(entry?.timestamp || 0) >= cutoff);
+}
 
 function loadStateFromFile() {
   try {
@@ -44,7 +50,7 @@ function loadStateFromFile() {
     profit = Number(totals.profit || 0);
     streak = Number(totals.currentStreak || 0);
 
-    const existingHistory = Array.isArray(parsed?.history) ? parsed.history : [];
+    const existingHistory = pruneHistory(Array.isArray(parsed?.history) ? parsed.history : []);
     existingHistory.slice(-MAX_HISTORY).forEach((entry) => {
       if (!entry || entry.session === undefined || entry.session === null) return;
       history.push(entry);
@@ -69,6 +75,13 @@ function writeStatsFile(entry) {
 
   history.push(entry);
   if (sessionKey) seenSessions.add(sessionKey);
+  const cutoff = Date.now() - HISTORY_WINDOW_MS;
+  while (history.length > 0 && Number(history[0]?.timestamp || 0) < cutoff) {
+    const dropped = history.shift();
+    if (dropped?.session !== undefined && dropped?.session !== null) {
+      seenSessions.delete(String(dropped.session));
+    }
+  }
   if (history.length > MAX_HISTORY) {
     const dropped = history.shift();
     if (dropped?.session !== undefined && dropped?.session !== null) {
@@ -292,6 +305,8 @@ async function run() {
             value: sum,
             display: displayEmoji,
             status,
+            bet: 0,
+            change: 0,
             timestamp: Date.now(),
           });
           continue;
@@ -323,6 +338,8 @@ async function run() {
           value: sum,
           display: displayEmoji,
           status,
+          bet,
+          change,
           timestamp: Date.now(),
         });
 

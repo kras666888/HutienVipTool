@@ -8,6 +8,7 @@ const games = [
 
 const ROWS = 6;
 const MIN_VISIBLE_COLS = 20;
+const HISTORY_WINDOW_MS = 24 * 60 * 60 * 1000;
 const STALE_MINUTES = 30;
 const POLL_INTERVAL_MS = 5000;
 const FETCH_TIMEOUT_MS = 4500;
@@ -63,6 +64,13 @@ function chipText(entry) {
   if (entry.value !== undefined && entry.value !== null) return String(entry.value);
   if (entry.label) return String(entry.label).slice(0, 1);
   return "?";
+}
+
+function getRecentHistory(entries) {
+  const source = Array.isArray(entries) ? entries : [];
+  const cutoff = Date.now() - HISTORY_WINDOW_MS;
+  const recent = source.filter((entry) => Number(entry?.timestamp || 0) >= cutoff);
+  return recent.length > 0 ? recent : source;
 }
 
 function buildRoad(entries) {
@@ -137,7 +145,7 @@ function renderGrid(gameKey, entries) {
 
 function renderBoard(container, game, stats) {
   const totals = stats?.totals || {};
-  const history = Array.isArray(stats?.history) ? stats.history : [];
+  const history = getRecentHistory(stats?.history);
   const updatedAt = stats?.updatedAt || null;
   const stale = isStale(updatedAt);
 
@@ -150,7 +158,7 @@ function renderBoard(container, game, stats) {
         <p>${game.leftLabel} / ${game.rightLabel}</p>
       </div>
       <div class="board-meta">
-        <span class="badge">${history.length} phiên gần nhất</span>
+        <span class="badge">${history.length} phiên trong 24 giờ</span>
         <span class="badge badge-soft">${updatedAt ? `Cập nhật ${formatUpdatedAt(updatedAt)}` : "Chưa có mốc cập nhật"}</span>
         ${stale ? `<span class="badge badge-warn">Dữ liệu cũ</span>` : ""}
       </div>
