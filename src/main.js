@@ -7,12 +7,13 @@ const games = [
 ];
 
 const ROWS = 6;
-const COLS = 20;
+const MIN_VISIBLE_COLS = 20;
 const STALE_MINUTES = 30;
 const POLL_INTERVAL_MS = 5000;
 const FETCH_TIMEOUT_MS = 4500;
 const DEFAULT_STATS_BASE_URL = import.meta.env.VITE_STATS_BASE_URL || "https://raw.githubusercontent.com/kras666888/HutienVipTool/main/public/";
 const lastGoodStats = new Map();
+const roadScrollPositions = new Map();
 let isRefreshing = false;
 
 document.querySelector("#app").innerHTML = `
@@ -65,14 +66,22 @@ function chipText(entry) {
 }
 
 function buildRoad(entries) {
-  const board = Array.from({ length: ROWS }, () => Array.from({ length: COLS }, () => null));
-  if (!Array.isArray(entries) || entries.length === 0) return board;
+  const placed = Array.from({ length: ROWS }, () => []);
+  if (!Array.isArray(entries) || entries.length === 0) {
+    return {
+      grid: Array.from({ length: ROWS }, () => Array.from({ length: MIN_VISIBLE_COLS }, () => null)),
+      totalCols: MIN_VISIBLE_COLS,
+    };
+  }
+
+  const hasCell = (r, c) => Boolean(placed[r][c]);
 
   let col = 0;
   let row = 0;
   let prevSide = null;
+  let maxCol = 0;
 
-  for (const entry of entries.slice(-120)) {
+  for (const entry of entries) {
     const side = String(entry.side || "").toUpperCase();
 
     if (prevSide === null) {
@@ -80,7 +89,7 @@ function buildRoad(entries) {
       row = 0;
     } else if (side === prevSide) {
       const nextRow = row + 1;
-      if (nextRow < ROWS && !board[nextRow][col]) {
+      if (nextRow < ROWS && !hasCell(nextRow, col)) {
         row = nextRow;
       } else {
         col += 1;
@@ -90,29 +99,27 @@ function buildRoad(entries) {
       row = 0;
     }
 
-    while (col < COLS && board[row][col]) {
+    while (hasCell(row, col)) {
       col += 1;
     }
-    if (col >= COLS) {
-      for (let r = 0; r < ROWS; r += 1) {
-        for (let c = 0; c < COLS - 1; c += 1) {
-          board[r][c] = board[r][c + 1];
-        }
-        board[r][COLS - 1] = null;
-      }
-      col = COLS - 1;
-    }
 
-    board[row][col] = entry;
+    placed[row][col] = entry;
+    if (col > maxCol) maxCol = col;
     prevSide = side;
   }
 
-  return board;
+  const totalCols = Math.max(MIN_VISIBLE_COLS, maxCol + 1);
+  const grid = Array.from({ length: ROWS }, (_, r) =>
+    Array.from({ length: totalCols }, (_, c) => placed[r][c] || null)
+  );
+
+  return { grid, totalCols };
 }
 
-function renderGrid(entries) {
-  const grid = buildRoad(entries);
-  return `<div class="road-grid">${grid
+function renderGrid(gameKey, entries) {
+  const { grid, totalCols } = buildRoad(entries);
+  return `<div class="road-scroll" data-road-scroll data-game="${gameKey}">
+    <div class="road-grid" style="--road-cols:${totalCols}">${grid
     .map(
       (row) =>
         `<div class="road-row">${row
@@ -123,7 +130,9 @@ function renderGrid(entries) {
           })
           .join("")}</div>`
     )
-    .join("")}</div>`;
+    .join("")}</div>
+  </div>
+  <p class="road-hint">Kéo ngang để xem lịch sử cũ hơn</p>`;
 }
 
 function renderBoard(container, game, stats) {
@@ -146,7 +155,7 @@ function renderBoard(container, game, stats) {
         ${stale ? `<span class="badge badge-warn">Dữ liệu cũ</span>` : ""}
       </div>
     </header>
-    ${renderGrid(history)}
+    ${renderGrid(game.key, history)}
     <div class="stats-grid">
       <div><label>Tổng phiên</label><strong>${totals.rounds ?? 0}</strong></div>
       <div><label>Thắng / Thua</label><strong>${totals.win ?? 0} / ${totals.lose ?? 0}</strong></div>
@@ -157,6 +166,51 @@ function renderBoard(container, game, stats) {
     </div>
   `;
   container.appendChild(card);
+}
+
+function enableRoadDragScroll(root) {
+  const scrollers = root.querySelectorAll("[data-road-scroll]");
+
+  scrollers.forEach((scroller) => {
+    const gameKey = scroller.dataset.game;
+    const cached = roadScrollPositions.get(gameKey);
+    scroller.scrollLeft = cached ?? scroller.scrollWidth;
+
+    let dragging = false;
+    let startX = 0;
+    let startScroll = 0;
+
+    scroller.addEventListener("scroll", () => {
+      roadScrollPositions.set(gameKey, scroller.scrollLeft);
+    });
+
+    scroller.addEventListener("pointerdown", (event) => {
+      if (event.pointerType !== "mouse" || event.button !== 0) return;
+      dragging = true;
+      startX = event.clientX;
+      startScroll = scroller.scrollLeft;
+      scroller.classList.add("dragging");
+      scroller.setPointerCapture(event.pointerId);
+    });
+
+    scroller.addEventListener("pointermove", (event) => {
+      if (!dragging) return;
+      const deltaX = event.clientX - startX;
+      scroller.scrollLeft = startScroll - deltaX;
+    });
+
+    const stopDrag = (event) => {
+      if (!dragging) return;
+      dragging = false;
+      scroller.classList.remove("dragging");
+      if (scroller.hasPointerCapture(event.pointerId)) {
+        scroller.releasePointerCapture(event.pointerId);
+      }
+    };
+
+    scroller.addEventListener("pointerup", stopDrag);
+    scroller.addEventListener("pointercancel", stopDrag);
+  });
 }
 
 async function readStats(url) {
@@ -204,6 +258,7 @@ async function renderDashboard() {
     renderBoard(fragment, game, resolvedStats[idx]);
   });
   boards.appendChild(fragment);
+  enableRoadDragScroll(boards);
 
   const stamp = document.querySelector("#last-refresh");
   if (stamp) {

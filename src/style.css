@@ -117,11 +117,37 @@ body {
 .road-grid {
   border-top: 1px solid rgba(255, 235, 190, 0.12);
   border-bottom: 1px solid rgba(255, 235, 190, 0.12);
+  min-width: max-content;
+}
+
+.road-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 235, 190, 0.35) rgba(255, 235, 190, 0.08);
+}
+
+.road-scroll.dragging {
+  cursor: grabbing;
+}
+
+.road-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.road-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 235, 190, 0.08);
+}
+
+.road-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 235, 190, 0.35);
+  border-radius: 999px;
 }
 
 .road-row {
   display: grid;
-  grid-template-columns: repeat(20, minmax(44px, 1fr));
+  grid-template-columns: repeat(var(--road-cols, 20), 44px);
 }
 
 .road-cell {
@@ -180,9 +206,15 @@ body {
   font-size: 18px;
 }
 
+.road-hint {
+  margin: 8px 12px 0;
+  color: #c9ba8f;
+  font-size: 12px;
+}
+
 @media (max-width: 1100px) {
   .road-row {
-    grid-template-columns: repeat(20, minmax(28px, 1fr));
+    grid-template-columns: repeat(var(--road-cols, 20), 34px);
   }
 
   .stats-grid {
@@ -201,5 +233,9 @@ body {
 
   .stats-grid {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+
+  .road-row {
+    grid-template-columns: repeat(var(--road-cols, 20), 30px);
   }
 }
