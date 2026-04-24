@@ -7,12 +7,12 @@ on:
 
 concurrency:
   group: telegram-alerts-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   tx2:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 5
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run TX2 telegram bot
-        run: timeout 4m node bot-telegram.cjs || true
+        run: timeout 3m node bot-telegram.cjs || true
         env:
           BOT_ROLE: telegram
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -36,7 +36,7 @@ jobs:
 
   taixiu:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 5
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -51,7 +51,7 @@ jobs:
         run: npm ci
 
       - name: Run TAI XIU telegram bot
-        run: timeout 4m node bot-taixiu.cjs || true
+        run: timeout 3m node bot-taixiu.cjs || true
         env:
           BOT_ROLE: telegram
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -64,7 +64,7 @@ jobs:
 
   xocdia:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 5
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -79,7 +79,7 @@ jobs:
         run: npm ci
 
       - name: Run XOC DIA telegram bot
-        run: timeout 4m node bot-xocdia.cjs || true
+        run: timeout 3m node bot-xocdia.cjs || true
         env:
           BOT_ROLE: telegram
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

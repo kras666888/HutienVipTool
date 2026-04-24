@@ -118,6 +118,16 @@ Workflow `.github/workflows/sync-stats.yml` có thể chạy theo lịch hoặc 
 2. Commit lại thay đổi trong `public/stats/` bằng `GITHUB_TOKEN` mặc định của Actions.
 3. Kích hoạt deploy Netlify từ workflow hiện có.
 
+## Vận hành 24/7 (web + telegram)
+
+Repo hiện có 3 workflow độc lập để giữ hệ thống chạy liên tục:
+
+1. `sync-stats.yml` (mỗi 5 phút): cập nhật stats cho web.
+2. `telegram-alerts.yml` (mỗi 5 phút): gửi cảnh báo Telegram riêng.
+3. `ops-watchdog.yml` (mỗi 10 phút): kiểm tra độ tươi và tự dispatch lại workflow nếu thấy trễ.
+
+Lưu ý vận hành: không có giải pháp nào trên scheduler miễn phí đảm bảo tuyệt đối "vĩnh viễn". Cấu hình hiện tại là mức tự phục hồi cao, thực tế gần 24/7. Nếu cần SLA cứng, nên chạy thêm bản dự phòng trên VPS/PM2.
+
 Secrets cần thiết trên GitHub repo:
 
 - `TELEGRAM_BOT_TOKEN`
