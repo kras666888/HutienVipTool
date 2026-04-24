@@ -85,7 +85,39 @@ jobs:
             echo "Dispatched ${workflow_file}"
           }
 
+          cancel_stuck_run_and_redrive() {
+            local workflow_file="$1"
+            local max_age_sec="$2"
+
+            local runs
+            runs="$(curl -fsSL -H "Authorization: Bearer ${GH_TOKEN}" -H "Accept: application/vnd.github+json" "${API}/actions/workflows/${workflow_file}/runs?status=in_progress&per_page=1")"
+            local run_id
+            run_id="$(echo "$runs" | jq -r '.workflow_runs[0].id // empty')"
+            local created_at
+            created_at="$(echo "$runs" | jq -r '.workflow_runs[0].created_at // empty')"
+
+            if [ -z "$run_id" ] || [ -z "$created_at" ]; then
+              return 0
+            fi
+
+            local ts
+            ts="$(date -u -d "$created_at" +%s)"
+            local age=$((NOW - ts))
+
+            if [ "$age" -gt "$max_age_sec" ]; then
+              curl -fsSL -X POST \
+                -H "Authorization: Bearer ${GH_TOKEN}" \
+                -H "Accept: application/vnd.github+json" \
+                "${API}/actions/runs/${run_id}/cancel" >/dev/null || true
+              echo "Canceled stuck run ${run_id} for ${workflow_file} (age=${age}s)"
+              dispatch_workflow "$workflow_file"
+            fi
+          }
+
           RAW_BASE="https://raw.githubusercontent.com/${REPO}/main/public/stats"
+
+           cancel_stuck_run_and_redrive "sync-stats.yml" 480
+           cancel_stuck_run_and_redrive "telegram-alerts.yml" 420
 
           if ! check_stats_url "${RAW_BASE}/taixiu.json" 1200 || \
              ! check_stats_url "${RAW_BASE}/tx2.json" 1200 || \
