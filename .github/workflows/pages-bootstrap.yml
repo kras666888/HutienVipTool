@@ -1,0 +1,46 @@
+name: Bootstrap GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/pages-bootstrap.yml
+      - .github/workflows/pages-deploy.yml
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable Pages with workflow build
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
+            try {
+              await github.request('POST /repos/{owner}/{repo}/pages', {
+                owner,
+                repo,
+                build_type: 'workflow',
+                source: { branch: 'main', path: '/' }
+              });
+              core.info('GitHub Pages created and configured.');
+            } catch (err) {
+              if (err.status === 409 || err.status === 422) {
+                core.info('Pages already exists, updating settings.');
+                await github.request('PUT /repos/{owner}/{repo}/pages', {
+                  owner,
+                  repo,
+                  build_type: 'workflow',
+                  source: { branch: 'main', path: '/' }
+                });
+                core.info('GitHub Pages updated.');
+              } else {
+                throw err;
+              }
+            }
