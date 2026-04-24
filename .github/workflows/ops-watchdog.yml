@@ -5,10 +5,12 @@ on:
   push:
     branches:
       - main
-    paths:
-      - .github/workflows/ops-watchdog.yml
-      - .github/workflows/sync-stats.yml
-      - .github/workflows/telegram-alerts.yml
+  workflow_run:
+    workflows:
+      - Sync Stats
+      - Telegram Alerts
+    types:
+      - completed
   schedule:
     - cron: "*/10 * * * *"
 
