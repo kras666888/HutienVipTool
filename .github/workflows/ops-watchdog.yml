@@ -93,6 +93,10 @@ jobs:
             dispatch_workflow "sync-stats.yml"
           fi
 
+          if ! check_workflow_recent "sync-stats.yml" 900; then
+            dispatch_workflow "sync-stats.yml"
+          fi
+
           if ! check_workflow_recent "telegram-alerts.yml" 900; then
             dispatch_workflow "telegram-alerts.yml"
           fi
