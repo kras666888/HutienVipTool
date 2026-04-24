@@ -12,7 +12,7 @@ on:
     types:
       - completed
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "4,14,24,34,44,54 * * * *"
 
 concurrency:
   group: ops-watchdog-${{ github.ref }}
