@@ -117,8 +117,8 @@ jobs:
 
           RAW_BASE="https://raw.githubusercontent.com/${REPO}/main/public/stats"
 
-           cancel_stuck_run_and_redrive "sync-stats.yml" 480
-           cancel_stuck_run_and_redrive "telegram-alerts.yml" 420
+          cancel_stuck_run_and_redrive "sync-stats.yml" 180
+          cancel_stuck_run_and_redrive "telegram-alerts.yml" 180
 
           if ! check_stats_url "${RAW_BASE}/taixiu.json" 1200 || \
              ! check_stats_url "${RAW_BASE}/tx2.json" 1200 || \
