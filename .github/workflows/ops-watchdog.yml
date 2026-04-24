@@ -2,8 +2,19 @@ name: Ops Watchdog
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/ops-watchdog.yml
+      - .github/workflows/sync-stats.yml
+      - .github/workflows/telegram-alerts.yml
   schedule:
     - cron: "*/10 * * * *"
+
+concurrency:
+  group: ops-watchdog-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   actions: write
@@ -67,7 +78,7 @@ jobs:
               -H "Authorization: Bearer ${GH_TOKEN}" \
               -H "Accept: application/vnd.github+json" \
               "${API}/actions/workflows/${workflow_file}/dispatches" \
-              -d '{"ref":"main"}' >/dev/null
+              -d "{\"ref\":\"${GITHUB_REF_NAME}\"}" >/dev/null
             dispatched="1"
             echo "Dispatched ${workflow_file}"
           }
