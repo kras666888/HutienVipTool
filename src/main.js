@@ -12,7 +12,7 @@ const HISTORY_WINDOW_MS = 24 * 60 * 60 * 1000;
 const STALE_MINUTES = 30;
 const POLL_INTERVAL_MS = 5000;
 const FETCH_TIMEOUT_MS = 4500;
-const DEFAULT_STATS_BASE_URL = import.meta.env.VITE_STATS_BASE_URL || "https://raw.githubusercontent.com/kras666888/HutienVipTool/main/public/";
+const DEFAULT_STATS_BASE_URL = import.meta.env.VITE_STATS_BASE_URL || "/";
 const lastGoodStats = new Map();
 const roadScrollPositions = new Map();
 let isRefreshing = false;
@@ -222,9 +222,15 @@ function enableRoadDragScroll(root) {
 }
 
 async function readStats(url) {
-  const candidates = [joinUrl(DEFAULT_STATS_BASE_URL, url), `/${url}`];
+  // Prefer same-origin stats so deployed site reflects this repo immediately.
+  const candidates = [
+    `/${url}`,
+    joinUrl(DEFAULT_STATS_BASE_URL, url),
+  ];
 
-  for (const candidate of candidates) {
+  const uniqueCandidates = [...new Set(candidates)];
+
+  for (const candidate of uniqueCandidates) {
     try {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);

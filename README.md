@@ -28,6 +28,16 @@ npm run dev
 
 Mở địa chỉ Vite in ra terminal (thường là http://localhost:5173).
 
+## Chạy nhanh trong VS Code
+
+- Task: `Terminal -> Run Task...`
+	- `dev`, `build`, `preview`
+	- `bot:telegram`, `bot:taixiu`, `bot:xocdia`
+	- `bot:telegram:stats`, `bot:taixiu:stats`, `bot:xocdia:stats`
+- Launch profile: `Run and Debug -> Launch Vite Dev Server`
+
+Repo đã có sẵn cấu hình tại `.vscode/tasks.json` và `.vscode/launch.json`.
+
 ## Build production
 
 ```bash
@@ -51,7 +61,7 @@ TELEGRAM_BOT_TOKEN=your_bot_token_here
 TELEGRAM_CHAT_ID=your_default_chat_id
 BASE_BET=10000
 
-# Dashboard live source
+# Optional live source override (mặc định dashboard đọc /stats cùng domain)
 VITE_STATS_BASE_URL=https://raw.githubusercontent.com/kras666888/HutienVipTool/main/public/
 
 # Optional override theo game
