@@ -1,36 +1,25 @@
 {
   "game": "tx2",
-  "updatedAt": "2026-04-29T22:15:23.405Z",
+  "updatedAt": "2026-04-29T22:38:16.348Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 490,
+    "rounds": 491,
     "win": 222,
-    "lose": 268,
+    "lose": 269,
     "winRate": 45,
-    "profit": 2190000,
-    "currentStreak": 1,
-    "nextBet": 20000,
-    "lastSession": 11489173
+    "profit": 2180000,
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": 11489194
   },
   "state": {
-    "loseStreak": 0,
+    "loseStreak": 1,
     "predictSide": "XỈU",
-    "streak": 1,
-    "lastSession": 11489173,
-    "lastResultSession": 11489173
+    "streak": -1,
+    "lastSession": 11489194,
+    "lastResultSession": 11489194
   },
   "history": [
-    {
-      "session": 11487852,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 9,
-      "display": "4️⃣4️⃣1️⃣",
-      "status": "LOSE",
-      "bet": 40000,
-      "change": -40000,
-      "timestamp": 1777414530622
-    },
     {
       "session": 11487878,
       "side": "TÀI",
@@ -283,28 +272,6 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1777479345273
-    },
-    {
-      "session": 11487851,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 13,
-      "display": "3️⃣4️⃣6️⃣",
-      "status": "LOSE",
-      "bet": 20000,
-      "change": -20000,
-      "timestamp": 1777414474271
-    },
-    {
-      "session": 11487852,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 9,
-      "display": "4️⃣4️⃣1️⃣",
-      "status": "LOSE",
-      "bet": 40000,
-      "change": -40000,
-      "timestamp": 1777414530622
     },
     {
       "session": 11487878,
@@ -679,6 +646,17 @@
       "bet": 20000,
       "change": 20000,
       "timestamp": 1777500923405
+    },
+    {
+      "session": 11489194,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 14,
+      "display": "6️⃣4️⃣4️⃣",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1777502296348
     }
   ]
 }
