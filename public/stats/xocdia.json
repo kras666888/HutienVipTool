@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-05-02T19:48:18.958Z",
+  "updatedAt": "2026-05-02T20:16:30.278Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 1009,
-    "win": 511,
+    "rounds": 1012,
+    "win": 514,
     "lose": 498,
     "winRate": 51,
-    "profit": 5110000,
-    "currentStreak": 5,
+    "profit": 5140000,
+    "currentStreak": 8,
     "nextBet": 20000,
-    "lastSession": "1537321"
+    "lastSession": "1537370"
   },
   "state": {
     "loseStreak": 0,
     "predictSide": "CHAN",
     "localSession": 0,
-    "lastRoundKey": "s:1537321",
-    "streak": 5
+    "lastRoundKey": "s:1537370",
+    "streak": 8
   },
   "history": [
-    {
-      "session": "1535233",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1777665429076
-    },
-    {
-      "session": "1535234",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 3,
-      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1777665464598
-    },
     {
       "session": "1535297",
       "side": "LE",
@@ -536,6 +514,39 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1777751298958
+    },
+    {
+      "session": "1537368",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1777752923135
+    },
+    {
+      "session": "1537369",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1777752956676
+    },
+    {
+      "session": "1537370",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1777752990278
     }
   ]
 }
