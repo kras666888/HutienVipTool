@@ -1,36 +1,25 @@
 {
   "game": "taixiu",
-  "updatedAt": "2026-05-06T20:16:45.217Z",
+  "updatedAt": "2026-05-06T20:25:36.127Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 789,
-    "win": 397,
-    "lose": 392,
+    "rounds": 791,
+    "win": 398,
+    "lose": 393,
     "winRate": 50,
     "profit": 3970000,
-    "currentStreak": 2,
-    "nextBet": 20000,
-    "lastSession": 11012117
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": 11012125
   },
   "state": {
-    "loseStreak": 0,
-    "predictSide": "XỈU",
-    "streak": 2,
-    "lastSession": 11012117,
-    "lastResultSession": 11012117
+    "loseStreak": 1,
+    "predictSide": "TÀI",
+    "streak": -1,
+    "lastSession": 11012125,
+    "lastResultSession": 11012125
   },
   "history": [
-    {
-      "session": 11010820,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 10,
-      "display": "2️⃣4️⃣4️⃣",
-      "status": "WIN",
-      "bet": 20000,
-      "change": 20000,
-      "timestamp": 1778012276233
-    },
     {
       "session": 11010839,
       "side": "TÀI",
@@ -393,17 +382,6 @@
       "bet": 40000,
       "change": -40000,
       "timestamp": 1778087255986
-    },
-    {
-      "session": 11010820,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 10,
-      "display": "2️⃣4️⃣4️⃣",
-      "status": "WIN",
-      "bet": 20000,
-      "change": 20000,
-      "timestamp": 1778012276233
     },
     {
       "session": 11010839,
@@ -844,6 +822,28 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1778098605217
+    },
+    {
+      "session": 11012124,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 9,
+      "display": "4️⃣1️⃣4️⃣",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1778099070271
+    },
+    {
+      "session": 11012125,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 5,
+      "display": "1️⃣2️⃣2️⃣",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1778099136127
     }
   ]
 }
