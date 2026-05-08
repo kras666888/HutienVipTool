@@ -1,58 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-05-08T20:23:15.143Z",
+  "updatedAt": "2026-05-08T20:44:17.710Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 1449,
-    "win": 723,
+    "rounds": 1451,
+    "win": 725,
     "lose": 726,
     "winRate": 50,
-    "profit": 7230000,
-    "currentStreak": 1,
+    "profit": 7250000,
+    "currentStreak": 3,
     "nextBet": 20000,
-    "lastSession": "1552712"
+    "lastSession": "1552748"
   },
   "state": {
     "loseStreak": 0,
-    "predictSide": "CHAN",
+    "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1552712",
-    "streak": 1
+    "lastRoundKey": "s:1552748",
+    "streak": 3
   },
   "history": [
-    {
-      "session": "1550202",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 3,
-      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
-      "status": "WIN",
-      "bet": 20000,
-      "change": 20000,
-      "timestamp": 1778185531341
-    },
-    {
-      "session": "1550203",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1778185568755
-    },
-    {
-      "session": "1550204",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 1,
-      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1778185601364
-    },
     {
       "session": "1550326",
       "side": "CHAN",
@@ -701,6 +668,28 @@
       "bet": 40000,
       "change": 40000,
       "timestamp": 1778271795143
+    },
+    {
+      "session": "1552747",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1778273025075
+    },
+    {
+      "session": "1552748",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1778273057710
     }
   ]
 }
