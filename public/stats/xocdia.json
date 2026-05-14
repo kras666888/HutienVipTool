@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-05-14T07:59:01.466Z",
+  "updatedAt": "2026-05-14T09:49:13.429Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 1811,
-    "win": 889,
-    "lose": 922,
+    "rounds": 1814,
+    "win": 891,
+    "lose": 923,
     "winRate": 49,
-    "profit": 8890000,
-    "currentStreak": 2,
+    "profit": 8910000,
+    "currentStreak": 1,
     "nextBet": 20000,
-    "lastSession": "1566851"
+    "lastSession": "1567051"
   },
   "state": {
     "loseStreak": 0,
     "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1566851",
-    "streak": 2
+    "lastRoundKey": "s:1567051",
+    "streak": 1
   },
   "history": [
-    {
-      "session": "1564297",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "LOSE",
-      "bet": 20000,
-      "change": -20000,
-      "timestamp": 1778660172718
-    },
-    {
-      "session": "1564298",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 1,
-      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "LOSE",
-      "bet": 40000,
-      "change": -40000,
-      "timestamp": 1778660205472
-    },
     {
       "session": "1564575",
       "side": "LE",
@@ -635,6 +613,39 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1778745541466
+    },
+    {
+      "session": "1567049",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1778752087266
+    },
+    {
+      "session": "1567050",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1778752120362
+    },
+    {
+      "session": "1567051",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "bet": 20000,
+      "change": 20000,
+      "timestamp": 1778752153429
     }
   ]
 }
