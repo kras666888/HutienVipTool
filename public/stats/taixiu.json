@@ -1,23 +1,23 @@
 {
   "game": "taixiu",
-  "updatedAt": "2026-05-16T21:04:19.746Z",
+  "updatedAt": "2026-05-16T21:26:41.332Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 1154,
+    "rounds": 1156,
     "win": 581,
-    "lose": 573,
+    "lose": 575,
     "winRate": 50,
-    "profit": 5810000,
-    "currentStreak": 1,
-    "nextBet": 20000,
-    "lastSession": 11025205
+    "profit": 5780000,
+    "currentStreak": -2,
+    "nextBet": 80000,
+    "lastSession": 11025225
   },
   "state": {
-    "loseStreak": 0,
+    "loseStreak": 2,
     "predictSide": "TÀI",
-    "streak": 1,
-    "lastSession": 11025205,
-    "lastResultSession": 11025205
+    "streak": -2,
+    "lastSession": 11025225,
+    "lastResultSession": 11025225
   },
   "history": [
     {
@@ -382,6 +382,28 @@
       "bet": 80000,
       "change": 80000,
       "timestamp": 1778965459746
+    },
+    {
+      "session": 11025224,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 10,
+      "display": "2️⃣6️⃣2️⃣",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1778966736444
+    },
+    {
+      "session": 11025225,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 9,
+      "display": "3️⃣5️⃣1️⃣",
+      "status": "LOSE",
+      "bet": 20000,
+      "change": -20000,
+      "timestamp": 1778966801332
     }
   ]
 }
