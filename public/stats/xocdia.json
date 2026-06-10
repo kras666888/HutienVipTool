@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-06-10T16:59:14.559Z",
+  "updatedAt": "2026-06-10T19:33:50.008Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 3343,
-    "win": 1685,
-    "lose": 1658,
+    "rounds": 3346,
+    "win": 1686,
+    "lose": 1660,
     "winRate": 50,
-    "profit": 16850000,
+    "profit": 16860000,
     "currentStreak": 1,
     "nextBet": 20000,
-    "lastSession": "1646720"
+    "lastSession": "1646989"
   },
   "state": {
     "loseStreak": 0,
-    "predictSide": "CHAN",
+    "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1646720",
+    "lastRoundKey": "s:1646989",
     "streak": 1
   },
   "history": [
-    {
-      "session": "1644301",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 1,
-      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1781030174384
-    },
-    {
-      "session": "1644302",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 1,
-      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "WIN",
-      "bet": 20000,
-      "change": 20000,
-      "timestamp": 1781030210646
-    },
     {
       "session": "1644512",
       "side": "LE",
@@ -272,6 +250,39 @@
       "bet": 20000,
       "change": 20000,
       "timestamp": 1781110754559
+    },
+    {
+      "session": "1646987",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1781119966114
+    },
+    {
+      "session": "1646988",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "bet": 20000,
+      "change": -20000,
+      "timestamp": 1781119997104
+    },
+    {
+      "session": "1646989",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "bet": 40000,
+      "change": 40000,
+      "timestamp": 1781120030008
     }
   ]
 }
