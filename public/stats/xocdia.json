@@ -1,58 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-06-19T22:41:17.894Z",
+  "updatedAt": "2026-06-19T23:21:23.084Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 3783,
-    "win": 1892,
-    "lose": 1891,
+    "rounds": 3786,
+    "win": 1893,
+    "lose": 1893,
     "winRate": 50,
-    "profit": 18610000,
-    "currentStreak": -5,
-    "nextBet": 640000,
-    "lastSession": "1670547"
+    "profit": 18920000,
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": "1670619"
   },
   "state": {
-    "loseStreak": 5,
-    "predictSide": "CHAN",
+    "loseStreak": 1,
+    "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1670547",
-    "streak": -5
+    "lastRoundKey": "s:1670619",
+    "streak": -1
   },
   "history": [
-    {
-      "session": "1668005",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 0,
-      "display": "4 trắng ⚪⚪⚪⚪",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1781823921763
-    },
-    {
-      "session": "1668006",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 4,
-      "display": "4 đỏ 🔴🔴🔴🔴",
-      "status": "LOSE",
-      "bet": 20000,
-      "change": -20000,
-      "timestamp": 1781823954734
-    },
-    {
-      "session": "1668007",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "WIN",
-      "bet": 40000,
-      "change": 40000,
-      "timestamp": 1781823987878
-    },
     {
       "session": "1668053",
       "side": "LE",
@@ -668,6 +635,39 @@
       "bet": 160000,
       "change": -160000,
       "timestamp": 1781908877894
+    },
+    {
+      "session": "1670617",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "bet": 320000,
+      "change": -320000,
+      "timestamp": 1781911217564
+    },
+    {
+      "session": "1670618",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "bet": 640000,
+      "change": 640000,
+      "timestamp": 1781911250391
+    },
+    {
+      "session": "1670619",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1781911283084
     }
   ]
 }
