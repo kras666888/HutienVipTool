@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-06-27T05:11:11.491Z",
+  "updatedAt": "2026-06-27T07:34:27.611Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 4141,
-    "win": 2069,
-    "lose": 2072,
+    "rounds": 4144,
+    "win": 2070,
+    "lose": 2074,
     "winRate": 50,
-    "profit": 20660000,
+    "profit": 20670000,
     "currentStreak": -2,
     "nextBet": 80000,
-    "lastSession": "1689724"
+    "lastSession": "1689983"
   },
   "state": {
     "loseStreak": 2,
     "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1689724",
+    "lastRoundKey": "s:1689983",
     "streak": -2
   },
   "history": [
-    {
-      "session": "1687220",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 1,
-      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "LOSE",
-      "bet": 20000,
-      "change": -20000,
-      "timestamp": 1782453279115
-    },
-    {
-      "session": "1687221",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 3,
-      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
-      "status": "LOSE",
-      "bet": 40000,
-      "change": -40000,
-      "timestamp": 1782453312122
-    },
     {
       "session": "1687497",
       "side": "CHAN",
@@ -646,6 +624,39 @@
       "bet": 20000,
       "change": -20000,
       "timestamp": 1782537071491
+    },
+    {
+      "session": "1689981",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "bet": 40000,
+      "change": 40000,
+      "timestamp": 1782545601487
+    },
+    {
+      "session": "1689982",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1782545634587
+    },
+    {
+      "session": "1689983",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "bet": 20000,
+      "change": -20000,
+      "timestamp": 1782545667611
     }
   ]
 }
