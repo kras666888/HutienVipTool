@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-07-02T19:50:51.654Z",
+  "updatedAt": "2026-07-02T20:15:11.841Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 4424,
-    "win": 2193,
-    "lose": 2231,
+    "rounds": 4427,
+    "win": 2195,
+    "lose": 2232,
     "winRate": 50,
-    "profit": 21930000,
-    "currentStreak": 1,
-    "nextBet": 20000,
-    "lastSession": "1704171"
+    "profit": 21940000,
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": "1704215"
   },
   "state": {
-    "loseStreak": 0,
-    "predictSide": "CHAN",
+    "loseStreak": 1,
+    "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1704171",
-    "streak": 1
+    "lastRoundKey": "s:1704215",
+    "streak": -1
   },
   "history": [
-    {
-      "session": "1701604",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 3,
-      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
-      "status": "WIN",
-      "bet": 20000,
-      "change": 20000,
-      "timestamp": 1782935928550
-    },
-    {
-      "session": "1701605",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 1,
-      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1782935961479
-    },
     {
       "session": "1701718",
       "side": "LE",
@@ -701,6 +679,39 @@
       "bet": 2560000,
       "change": 2560000,
       "timestamp": 1783021851654
+    },
+    {
+      "session": "1704213",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1783023246061
+    },
+    {
+      "session": "1704214",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1783023278988
+    },
+    {
+      "session": "1704215",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1783023311841
     }
   ]
 }
