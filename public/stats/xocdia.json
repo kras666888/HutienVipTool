@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-07-07T23:44:26.931Z",
+  "updatedAt": "2026-07-08T01:12:44.328Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 4685,
-    "win": 2338,
-    "lose": 2347,
+    "rounds": 4688,
+    "win": 2339,
+    "lose": 2349,
     "winRate": 50,
-    "profit": 23380000,
+    "profit": 23390000,
     "currentStreak": 1,
     "nextBet": 20000,
-    "lastSession": "1717409"
+    "lastSession": "1717569"
   },
   "state": {
     "loseStreak": 0,
     "predictSide": "CHAN",
     "localSession": 0,
-    "lastRoundKey": "s:1717409",
+    "lastRoundKey": "s:1717569",
     "streak": 1
   },
   "history": [
-    {
-      "session": "1714856",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1783382120684
-    },
-    {
-      "session": "1714857",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "LOSE",
-      "bet": 20000,
-      "change": -20000,
-      "timestamp": 1783382153737
-    },
     {
       "session": "1715032",
       "side": "CHAN",
@@ -426,6 +404,39 @@
       "bet": 80000,
       "change": 80000,
       "timestamp": 1783467866931
+    },
+    {
+      "session": "1717567",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1783473098040
+    },
+    {
+      "session": "1717568",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "bet": 20000,
+      "change": -20000,
+      "timestamp": 1783473131024
+    },
+    {
+      "session": "1717569",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "WIN",
+      "bet": 40000,
+      "change": 40000,
+      "timestamp": 1783473164328
     }
   ]
 }
