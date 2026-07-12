@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-07-12T23:03:38.179Z",
+  "updatedAt": "2026-07-12T23:45:36.637Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 4953,
-    "win": 2473,
-    "lose": 2480,
+    "rounds": 4956,
+    "win": 2475,
+    "lose": 2481,
     "winRate": 50,
-    "profit": 24730000,
-    "currentStreak": 3,
+    "profit": 24750000,
+    "currentStreak": 1,
     "nextBet": 20000,
-    "lastSession": "1730223"
+    "lastSession": "1730298"
   },
   "state": {
     "loseStreak": 0,
-    "predictSide": "CHAN",
+    "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1730223",
-    "streak": 3
+    "lastRoundKey": "s:1730298",
+    "streak": 1
   },
   "history": [
-    {
-      "session": "1727718",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "LOSE",
-      "bet": 40000,
-      "change": -40000,
-      "timestamp": 1783813481177
-    },
-    {
-      "session": "1727719",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 1,
-      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "WIN",
-      "bet": 80000,
-      "change": 80000,
-      "timestamp": 1783813514589
-    },
     {
       "session": "1727720",
       "side": "CHAN",
@@ -558,6 +536,39 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1783897418179
+    },
+    {
+      "session": "1730296",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1783899870336
+    },
+    {
+      "session": "1730297",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 4,
+      "display": "4 đỏ 🔴🔴🔴🔴",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1783899903598
+    },
+    {
+      "session": "1730298",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "bet": 20000,
+      "change": 20000,
+      "timestamp": 1783899936637
     }
   ]
 }
