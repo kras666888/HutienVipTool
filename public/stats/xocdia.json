@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-08-08T23:26:33.745Z",
+  "updatedAt": "2026-08-08T23:40:28.131Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 6767,
-    "win": 3365,
-    "lose": 3402,
+    "rounds": 6770,
+    "win": 3366,
+    "lose": 3404,
     "winRate": 50,
-    "profit": 33640000,
+    "profit": 33650000,
     "currentStreak": -1,
     "nextBet": 40000,
-    "lastSession": "1799059"
+    "lastSession": "1799084"
   },
   "state": {
     "loseStreak": 1,
     "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1799059",
+    "lastRoundKey": "s:1799084",
     "streak": -1
   },
   "history": [
-    {
-      "session": "1796513",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1786145766923
-    },
-    {
-      "session": "1796514",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1786145800243
-    },
     {
       "session": "1796549",
       "side": "LE",
@@ -1625,6 +1603,39 @@
       "bet": 10000,
       "change": -10000,
       "timestamp": 1786231593745
+    },
+    {
+      "session": "1799082",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "bet": 20000,
+      "change": -20000,
+      "timestamp": 1786232361603
+    },
+    {
+      "session": "1799083",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "bet": 40000,
+      "change": 40000,
+      "timestamp": 1786232394976
+    },
+    {
+      "session": "1799084",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1786232428131
     }
   ]
 }
