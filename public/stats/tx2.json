@@ -1,69 +1,25 @@
 {
   "game": "tx2",
-  "updatedAt": "2026-08-09T16:02:11.857Z",
+  "updatedAt": "2026-08-09T16:20:51.550Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 3974,
+    "rounds": 3975,
     "win": 1970,
-    "lose": 2004,
+    "lose": 2005,
     "winRate": 50,
-    "profit": 19670000,
-    "currentStreak": 1,
-    "nextBet": 20000,
-    "lastSession": 12685744
+    "profit": 19660000,
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": 12685761
   },
   "state": {
-    "loseStreak": 0,
+    "loseStreak": 1,
     "predictSide": "TÀI",
-    "streak": 1,
-    "lastSession": 12685744,
-    "lastResultSession": 12685744
+    "streak": -1,
+    "lastSession": 12685761,
+    "lastResultSession": 12685761
   },
   "history": [
-    {
-      "session": 12684436,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 5,
-      "display": "1️⃣2️⃣2️⃣",
-      "status": "WIN",
-      "bet": 40000,
-      "change": 40000,
-      "timestamp": 1786205207162
-    },
-    {
-      "session": 12684437,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 10,
-      "display": "5️⃣3️⃣2️⃣",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1786205260796
-    },
-    {
-      "session": 12684441,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 9,
-      "display": "3️⃣3️⃣3️⃣",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1786205524037
-    },
-    {
-      "session": 12684442,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 14,
-      "display": "3️⃣5️⃣6️⃣",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1786205589905
-    },
     {
       "session": 12684459,
       "side": "TÀI",
@@ -1119,6 +1075,17 @@
       "bet": 20000,
       "change": 20000,
       "timestamp": 1786291331857
+    },
+    {
+      "session": 12685761,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 10,
+      "display": "1️⃣6️⃣3️⃣",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1786292451549
     }
   ]
 }
