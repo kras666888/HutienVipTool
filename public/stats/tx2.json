@@ -1,23 +1,23 @@
 {
   "game": "tx2",
-  "updatedAt": "2026-08-09T04:41:44.354Z",
+  "updatedAt": "2026-08-09T05:16:51.316Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 3923,
-    "win": 1942,
-    "lose": 1981,
+    "rounds": 3925,
+    "win": 1943,
+    "lose": 1982,
     "winRate": 50,
     "profit": 19390000,
-    "currentStreak": 2,
-    "nextBet": 20000,
-    "lastSession": 12685124
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": 12685156
   },
   "state": {
-    "loseStreak": 0,
-    "predictSide": "TÀI",
-    "streak": 2,
-    "lastSession": 12685124,
-    "lastResultSession": 12685124
+    "loseStreak": 1,
+    "predictSide": "XỈU",
+    "streak": -1,
+    "lastSession": 12685156,
+    "lastResultSession": 12685156
   },
   "history": [
     {
@@ -899,6 +899,28 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1786250504354
+    },
+    {
+      "session": 12685155,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 12,
+      "display": "6️⃣5️⃣1️⃣",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1786252545419
+    },
+    {
+      "session": 12685156,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 12,
+      "display": "4️⃣4️⃣4️⃣",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1786252611316
     }
   ]
 }
