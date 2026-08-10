@@ -1,69 +1,25 @@
 {
   "game": "tx2",
-  "updatedAt": "2026-08-10T19:08:06.554Z",
+  "updatedAt": "2026-08-10T19:45:25.873Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 4056,
-    "win": 2005,
-    "lose": 2051,
+    "rounds": 4058,
+    "win": 2006,
+    "lose": 2052,
     "winRate": 49,
     "profit": 20020000,
-    "currentStreak": 2,
-    "nextBet": 20000,
-    "lastSession": 12687225
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": 12687259
   },
   "state": {
-    "loseStreak": 0,
+    "loseStreak": 1,
     "predictSide": "XỈU",
-    "streak": 2,
-    "lastSession": 12687225,
-    "lastResultSession": 12687225
+    "streak": -1,
+    "lastSession": 12687259,
+    "lastResultSession": 12687259
   },
   "history": [
-    {
-      "session": 12685914,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 15,
-      "display": "6️⃣3️⃣6️⃣",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1786302527918
-    },
-    {
-      "session": 12685935,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 13,
-      "display": "4️⃣4️⃣5️⃣",
-      "status": "LOSE",
-      "bet": 20000,
-      "change": -20000,
-      "timestamp": 1786303916567
-    },
-    {
-      "session": 12685936,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 13,
-      "display": "3️⃣4️⃣6️⃣",
-      "status": "WIN",
-      "bet": 40000,
-      "change": 40000,
-      "timestamp": 1786303977892
-    },
-    {
-      "session": 12685947,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 11,
-      "display": "4️⃣2️⃣5️⃣",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1786304702266
-    },
     {
       "session": 12685967,
       "side": "XỈU",
@@ -789,6 +745,28 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1786388886554
+    },
+    {
+      "session": 12687258,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 6,
+      "display": "4️⃣1️⃣1️⃣",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1786391066154
+    },
+    {
+      "session": 12687259,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 11,
+      "display": "1️⃣5️⃣5️⃣",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1786391125873
     }
   ]
 }
