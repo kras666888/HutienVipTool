@@ -1,36 +1,25 @@
 {
   "game": "tx2",
-  "updatedAt": "2026-08-17T20:46:45.409Z",
+  "updatedAt": "2026-08-17T21:14:12.612Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 4661,
-    "win": 2302,
-    "lose": 2359,
+    "rounds": 4663,
+    "win": 2303,
+    "lose": 2360,
     "winRate": 49,
-    "profit": 22980000,
-    "currentStreak": -1,
-    "nextBet": 40000,
-    "lastSession": 12696498
+    "profit": 23000000,
+    "currentStreak": 1,
+    "nextBet": 20000,
+    "lastSession": 12696523
   },
   "state": {
-    "loseStreak": 1,
+    "loseStreak": 0,
     "predictSide": "XỈU",
-    "streak": -1,
-    "lastSession": 12696498,
-    "lastResultSession": 12696498
+    "streak": 1,
+    "lastSession": 12696523,
+    "lastResultSession": 12696523
   },
   "history": [
-    {
-      "session": 12695197,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 11,
-      "display": "3️⃣2️⃣6️⃣",
-      "status": "WIN",
-      "bet": 20000,
-      "change": 20000,
-      "timestamp": 1786913921140
-    },
     {
       "session": 12695215,
       "side": "XỈU",
@@ -668,17 +657,6 @@
       "bet": 10000,
       "change": -10000,
       "timestamp": 1786968913511
-    },
-    {
-      "session": 12695197,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 11,
-      "display": "3️⃣2️⃣6️⃣",
-      "status": "WIN",
-      "bet": 20000,
-      "change": 20000,
-      "timestamp": 1786913921140
     },
     {
       "session": 12695215,
@@ -1724,6 +1702,28 @@
       "bet": 10000,
       "change": -10000,
       "timestamp": 1786999605408
+    },
+    {
+      "session": 12696522,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 15,
+      "display": "5️⃣6️⃣4️⃣",
+      "status": "LOSE",
+      "bet": 20000,
+      "change": -20000,
+      "timestamp": 1787001186722
+    },
+    {
+      "session": 12696523,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 4,
+      "display": "1️⃣1️⃣2️⃣",
+      "status": "WIN",
+      "bet": 40000,
+      "change": 40000,
+      "timestamp": 1787001252612
     }
   ]
 }
