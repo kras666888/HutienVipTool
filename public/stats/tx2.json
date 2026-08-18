@@ -1,36 +1,25 @@
 {
   "game": "tx2",
-  "updatedAt": "2026-08-18T21:14:14.153Z",
+  "updatedAt": "2026-08-18T21:43:39.433Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 4771,
+    "rounds": 4772,
     "win": 2356,
-    "lose": 2415,
+    "lose": 2416,
     "winRate": 49,
-    "profit": 23530000,
-    "currentStreak": 3,
-    "nextBet": 20000,
-    "lastSession": 12697838
+    "profit": 23520000,
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": 12697865
   },
   "state": {
-    "loseStreak": 0,
+    "loseStreak": 1,
     "predictSide": "TÀI",
-    "streak": 3,
-    "lastSession": 12697838,
-    "lastResultSession": 12697838
+    "streak": -1,
+    "lastSession": 12697865,
+    "lastResultSession": 12697865
   },
   "history": [
-    {
-      "session": 12696546,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 10,
-      "display": "1️⃣4️⃣5️⃣",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1787002769024
-    },
     {
       "session": 12696559,
       "side": "TÀI",
@@ -437,28 +426,6 @@
       "bet": 10000,
       "change": -10000,
       "timestamp": 1787036222032
-    },
-    {
-      "session": 12696523,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 4,
-      "display": "1️⃣1️⃣2️⃣",
-      "status": "WIN",
-      "bet": 40000,
-      "change": 40000,
-      "timestamp": 1787001252612
-    },
-    {
-      "session": 12696546,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 10,
-      "display": "1️⃣4️⃣5️⃣",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1787002769024
     },
     {
       "session": 12696559,
@@ -1636,6 +1603,17 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1787087654153
+    },
+    {
+      "session": 12697865,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 7,
+      "display": "2️⃣3️⃣2️⃣",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1787089419433
     }
   ]
 }
