@@ -1,23 +1,23 @@
 {
   "game": "taixiu",
-  "updatedAt": "2026-08-19T14:26:31.938Z",
+  "updatedAt": "2026-08-19T14:53:58.546Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 4919,
-    "win": 2446,
-    "lose": 2473,
+    "rounds": 4921,
+    "win": 2447,
+    "lose": 2474,
     "winRate": 50,
     "profit": 24460000,
-    "currentStreak": 1,
-    "nextBet": 20000,
-    "lastSession": 11158742
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": 11158767
   },
   "state": {
-    "loseStreak": 0,
-    "predictSide": "TÀI",
-    "streak": 1,
-    "lastSession": 11158742,
-    "lastResultSession": 11158742
+    "loseStreak": 1,
+    "predictSide": "XỈU",
+    "streak": -1,
+    "lastSession": 11158767,
+    "lastResultSession": 11158767
   },
   "history": [
     {
@@ -602,28 +602,6 @@
       "bet": 10000,
       "change": -10000,
       "timestamp": 1787117828872
-    },
-    {
-      "session": 11157441,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 9,
-      "display": "4️⃣4️⃣1️⃣",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1787064105140
-    },
-    {
-      "session": 11157442,
-      "side": "XỈU",
-      "label": "XỈU",
-      "value": 5,
-      "display": "1️⃣3️⃣1️⃣",
-      "status": "WIN",
-      "bet": 20000,
-      "change": 20000,
-      "timestamp": 1787064170414
     },
     {
       "session": 11157455,
@@ -1933,6 +1911,28 @@
       "bet": 20000,
       "change": 20000,
       "timestamp": 1787149591938
+    },
+    {
+      "session": 11158766,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 12,
+      "display": "1️⃣6️⃣5️⃣",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1787151172691
+    },
+    {
+      "session": 11158767,
+      "side": "TÀI",
+      "label": "TÀI",
+      "value": 14,
+      "display": "4️⃣5️⃣5️⃣",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1787151238546
     }
   ]
 }
