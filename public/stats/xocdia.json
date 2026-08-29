@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-08-29T07:30:42.722Z",
+  "updatedAt": "2026-08-29T09:28:25.800Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 9615,
-    "win": 4797,
-    "lose": 4818,
+    "rounds": 9618,
+    "win": 4798,
+    "lose": 4820,
     "winRate": 50,
-    "profit": 47970000,
+    "profit": 47980000,
     "currentStreak": 1,
     "nextBet": 20000,
-    "lastSession": "1850907"
+    "lastSession": "1851118"
   },
   "state": {
     "loseStreak": 0,
     "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1850907",
+    "lastRoundKey": "s:1851118",
     "streak": 1
   },
   "history": [
-    {
-      "session": "1848449",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 0,
-      "display": "4 trắng ⚪⚪⚪⚪",
-      "status": "WIN",
-      "bet": 80000,
-      "change": 80000,
-      "timestamp": 1787905994410
-    },
-    {
-      "session": "1848450",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 0,
-      "display": "4 trắng ⚪⚪⚪⚪",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1787906027904
-    },
     {
       "session": "1849218",
       "side": "LE",
@@ -283,6 +261,39 @@
       "bet": 20000,
       "change": 20000,
       "timestamp": 1787988642722
+    },
+    {
+      "session": "1851116",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1787995639451
+    },
+    {
+      "session": "1851117",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "bet": 20000,
+      "change": -20000,
+      "timestamp": 1787995672752
+    },
+    {
+      "session": "1851118",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "bet": 40000,
+      "change": 40000,
+      "timestamp": 1787995705800
     }
   ]
 }
