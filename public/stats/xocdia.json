@@ -1,23 +1,23 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-09-02T13:04:04.107Z",
+  "updatedAt": "2026-09-02T13:42:01.676Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 9780,
-    "win": 4884,
-    "lose": 4896,
+    "rounds": 9782,
+    "win": 4885,
+    "lose": 4897,
     "winRate": 50,
-    "profit": 48830000,
-    "currentStreak": -1,
-    "nextBet": 40000,
-    "lastSession": "1861739"
+    "profit": 48850000,
+    "currentStreak": 1,
+    "nextBet": 20000,
+    "lastSession": "1861807"
   },
   "state": {
-    "loseStreak": 1,
-    "predictSide": "CHAN",
+    "loseStreak": 0,
+    "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1861739",
-    "streak": -1
+    "lastRoundKey": "s:1861807",
+    "streak": 1
   },
   "history": [
     {
@@ -569,6 +569,28 @@
       "bet": 10000,
       "change": -10000,
       "timestamp": 1788354244107
+    },
+    {
+      "session": "1861806",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "bet": 20000,
+      "change": -20000,
+      "timestamp": 1788356488510
+    },
+    {
+      "session": "1861807",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "bet": 40000,
+      "change": 40000,
+      "timestamp": 1788356521676
     }
   ]
 }
