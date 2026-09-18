@@ -1,58 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-09-18T06:32:24.691Z",
+  "updatedAt": "2026-09-18T11:20:46.543Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 10301,
-    "win": 5161,
-    "lose": 5140,
+    "rounds": 10304,
+    "win": 5163,
+    "lose": 5141,
     "winRate": 50,
-    "profit": 51600000,
-    "currentStreak": -1,
-    "nextBet": 40000,
-    "lastSession": "1901082"
+    "profit": 51630000,
+    "currentStreak": 1,
+    "nextBet": 20000,
+    "lastSession": "1901591"
   },
   "state": {
-    "loseStreak": 1,
+    "loseStreak": 0,
     "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1901082",
-    "streak": -1
+    "lastRoundKey": "s:1901591",
+    "streak": 1
   },
   "history": [
-    {
-      "session": "1898957",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 0,
-      "display": "4 trắng ⚪⚪⚪⚪",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1789639769959
-    },
-    {
-      "session": "1898958",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1789639804227
-    },
-    {
-      "session": "1898959",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 3,
-      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
-      "status": "WIN",
-      "bet": 20000,
-      "change": 20000,
-      "timestamp": 1789639838566
-    },
     {
       "session": "1899457",
       "side": "LE",
@@ -261,6 +228,39 @@
       "bet": 10000,
       "change": -10000,
       "timestamp": 1789713144691
+    },
+    {
+      "session": "1901589",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "bet": 20000,
+      "change": 20000,
+      "timestamp": 1789730377749
+    },
+    {
+      "session": "1901590",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1789730412855
+    },
+    {
+      "session": "1901591",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "WIN",
+      "bet": 20000,
+      "change": 20000,
+      "timestamp": 1789730446543
     }
   ]
 }
