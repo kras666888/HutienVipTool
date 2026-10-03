@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-10-03T21:33:55.280Z",
+  "updatedAt": "2026-10-03T22:31:58.103Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 10734,
-    "win": 5369,
-    "lose": 5365,
+    "rounds": 10737,
+    "win": 5371,
+    "lose": 5366,
     "winRate": 50,
-    "profit": 53690000,
+    "profit": 53710000,
     "currentStreak": 1,
     "nextBet": 20000,
-    "lastSession": "1940655"
+    "lastSession": "1940754"
   },
   "state": {
     "loseStreak": 0,
-    "predictSide": "CHAN",
+    "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:1940655",
+    "lastRoundKey": "s:1940754",
     "streak": 1
   },
   "history": [
-    {
-      "session": "1938166",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1790977804898
-    },
-    {
-      "session": "1938167",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 1,
-      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1790977841278
-    },
     {
       "session": "1938331",
       "side": "CHAN",
@@ -360,6 +338,39 @@
       "bet": 20000,
       "change": 20000,
       "timestamp": 1791063235280
+    },
+    {
+      "session": "1940752",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1791066647962
+    },
+    {
+      "session": "1940753",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1791066683233
+    },
+    {
+      "session": "1940754",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "bet": 20000,
+      "change": 20000,
+      "timestamp": 1791066718103
     }
   ]
 }
