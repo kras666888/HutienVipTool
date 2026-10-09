@@ -1,36 +1,25 @@
 {
   "game": "tx2",
-  "updatedAt": "2026-10-09T06:13:24.283Z",
+  "updatedAt": "2026-10-09T08:57:01.381Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 6289,
-    "win": 3117,
-    "lose": 3172,
+    "rounds": 6291,
+    "win": 3118,
+    "lose": 3173,
     "winRate": 50,
     "profit": 31140000,
-    "currentStreak": 2,
-    "nextBet": 20000,
-    "lastSession": 12777800
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": 12777949
   },
   "state": {
-    "loseStreak": 0,
-    "predictSide": "XỈU",
-    "streak": 2,
-    "lastSession": 12777800,
-    "lastResultSession": 12777800
+    "loseStreak": 1,
+    "predictSide": "TÀI",
+    "streak": -1,
+    "lastSession": 12777949,
+    "lastResultSession": 12777949
   },
   "history": [
-    {
-      "session": 12776544,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 13,
-      "display": "4️⃣4️⃣5️⃣",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1791443663439
-    },
     {
       "session": 12776697,
       "side": "XỈU",
@@ -63,17 +52,6 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1791464020560
-    },
-    {
-      "session": 12776544,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 13,
-      "display": "4️⃣4️⃣5️⃣",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1791443663439
     },
     {
       "session": 12776697,
@@ -283,6 +261,28 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1791526404283
+    },
+    {
+      "session": 12777948,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 9,
+      "display": "2️⃣4️⃣3️⃣",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1791536161593
+    },
+    {
+      "session": 12777949,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 8,
+      "display": "2️⃣4️⃣2️⃣",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1791536221381
     }
   ]
 }
