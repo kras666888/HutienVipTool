@@ -1,47 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-10-12T00:51:45.167Z",
+  "updatedAt": "2026-10-12T02:19:50.633Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 11019,
-    "win": 5518,
-    "lose": 5501,
+    "rounds": 11022,
+    "win": 5519,
+    "lose": 5503,
     "winRate": 50,
-    "profit": 55150000,
+    "profit": 55160000,
     "currentStreak": -2,
     "nextBet": 80000,
-    "lastSession": "1961007"
+    "lastSession": "1961163"
   },
   "state": {
     "loseStreak": 2,
-    "predictSide": "LE",
+    "predictSide": "CHAN",
     "localSession": 0,
-    "lastRoundKey": "s:1961007",
+    "lastRoundKey": "s:1961163",
     "streak": -2
   },
   "history": [
-    {
-      "session": "1958658",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 3,
-      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1791684454899
-    },
-    {
-      "session": "1958659",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 3,
-      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1791684488832
-    },
     {
       "session": "1959047",
       "side": "CHAN",
@@ -459,6 +437,39 @@
       "bet": 20000,
       "change": -20000,
       "timestamp": 1791766305167
+    },
+    {
+      "session": "1961161",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 1,
+      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
+      "status": "WIN",
+      "bet": 40000,
+      "change": 40000,
+      "timestamp": 1791771523339
+    },
+    {
+      "session": "1961162",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 0,
+      "display": "4 trắng ⚪⚪⚪⚪",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1791771557002
+    },
+    {
+      "session": "1961163",
+      "side": "LE",
+      "label": "LẺ",
+      "value": 3,
+      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
+      "status": "LOSE",
+      "bet": 20000,
+      "change": -20000,
+      "timestamp": 1791771590633
     }
   ]
 }
