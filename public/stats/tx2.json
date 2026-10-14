@@ -1,36 +1,25 @@
 {
   "game": "tx2",
-  "updatedAt": "2026-10-14T07:58:52.400Z",
+  "updatedAt": "2026-10-14T10:20:21.495Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 6386,
-    "win": 3159,
-    "lose": 3227,
+    "rounds": 6388,
+    "win": 3160,
+    "lose": 3228,
     "winRate": 49,
     "profit": 31560000,
-    "currentStreak": 1,
-    "nextBet": 20000,
-    "lastSession": 12784455
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": 12784584
   },
   "state": {
-    "loseStreak": 0,
-    "predictSide": "XỈU",
-    "streak": 1,
-    "lastSession": 12784455,
-    "lastResultSession": 12784455
+    "loseStreak": 1,
+    "predictSide": "TÀI",
+    "streak": -1,
+    "lastSession": 12784584,
+    "lastResultSession": 12784584
   },
   "history": [
-    {
-      "session": 12783239,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 12,
-      "display": "3️⃣6️⃣3️⃣",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1791884644022
-    },
     {
       "session": 12783283,
       "side": "TÀI",
@@ -52,17 +41,6 @@
       "bet": 40000,
       "change": 40000,
       "timestamp": 1791904659689
-    },
-    {
-      "session": 12783239,
-      "side": "TÀI",
-      "label": "TÀI",
-      "value": 12,
-      "display": "3️⃣6️⃣3️⃣",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1791884644022
     },
     {
       "session": 12783283,
@@ -261,6 +239,28 @@
       "bet": 320000,
       "change": 320000,
       "timestamp": 1791964732400
+    },
+    {
+      "session": 12784583,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 9,
+      "display": "5️⃣3️⃣1️⃣",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1791973155603
+    },
+    {
+      "session": 12784584,
+      "side": "XỈU",
+      "label": "XỈU",
+      "value": 8,
+      "display": "3️⃣3️⃣2️⃣",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1791973221495
     }
   ]
 }
