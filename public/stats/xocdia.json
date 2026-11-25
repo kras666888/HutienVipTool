@@ -1,80 +1,25 @@
 {
   "game": "xocdia",
-  "updatedAt": "2026-11-25T14:53:16.536Z",
+  "updatedAt": "2026-11-25T19:19:23.852Z",
   "maxHistory": 180,
   "totals": {
-    "rounds": 12370,
-    "win": 6218,
-    "lose": 6152,
+    "rounds": 12373,
+    "win": 6220,
+    "lose": 6153,
     "winRate": 50,
-    "profit": 62180000,
-    "currentStreak": 4,
-    "nextBet": 20000,
-    "lastSession": "2082300"
+    "profit": 62190000,
+    "currentStreak": -1,
+    "nextBet": 40000,
+    "lastSession": "2082755"
   },
   "state": {
-    "loseStreak": 0,
-    "predictSide": "CHAN",
+    "loseStreak": 1,
+    "predictSide": "LE",
     "localSession": 0,
-    "lastRoundKey": "s:2082300",
-    "streak": 4
+    "lastRoundKey": "s:2082755",
+    "streak": -1
   },
   "history": [
-    {
-      "session": "2079910",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 1,
-      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1795537048458
-    },
-    {
-      "session": "2079911",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 1,
-      "display": "1 đỏ 3 trắng 🔴⚪⚪⚪",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1795537082874
-    },
-    {
-      "session": "2079912",
-      "side": "LE",
-      "label": "LẺ",
-      "value": 3,
-      "display": "3 đỏ 1 trắng 🔴🔴🔴⚪",
-      "status": "LOSE",
-      "bet": 10000,
-      "change": -10000,
-      "timestamp": 1795537116358
-    },
-    {
-      "session": "2080082",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "WIN",
-      "bet": 20000,
-      "change": 20000,
-      "timestamp": 1795543427417
-    },
-    {
-      "session": "2080083",
-      "side": "CHAN",
-      "label": "CHẴN",
-      "value": 2,
-      "display": "2-2 ⚪⚪🔴🔴",
-      "status": "WIN",
-      "bet": 10000,
-      "change": 10000,
-      "timestamp": 1795543462043
-    },
     {
       "session": "2080462",
       "side": "CHAN",
@@ -294,6 +239,39 @@
       "bet": 10000,
       "change": 10000,
       "timestamp": 1795618396536
+    },
+    {
+      "session": "2082753",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1795634297480
+    },
+    {
+      "session": "2082754",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "WIN",
+      "bet": 10000,
+      "change": 10000,
+      "timestamp": 1795634330666
+    },
+    {
+      "session": "2082755",
+      "side": "CHAN",
+      "label": "CHẴN",
+      "value": 2,
+      "display": "2-2 ⚪⚪🔴🔴",
+      "status": "LOSE",
+      "bet": 10000,
+      "change": -10000,
+      "timestamp": 1795634363852
     }
   ]
 }
